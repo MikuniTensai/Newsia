@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!-- Customize theme ocean. -->
+    <color name="ocean_1">#345DA7</color>
+    <color name="ocean_2">#3B8AC4</color>
+    <color name="ocean_3">#4BB4DE</color>
+    <color name="ocean_4">#EFDBCB</color>
 </resources>
