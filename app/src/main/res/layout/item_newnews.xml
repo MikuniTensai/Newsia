@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="15dp"
+    android:layout_marginVertical="1dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:src="@drawable/slider1"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ocean_4"
+                android:shadowColor="@color/black"
+                android:background="@color/ocean_3"
+                android:textSize="16sp"
+                android:text="Example news"
+                android:lines="1"
+                android:maxLines="1"
+                android:ellipsize="marquee"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="4dp"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:justificationMode="inter_word"/>
+        </FrameLayout>
+
+<!--        <ImageView-->
+<!--            android:id="@+id/image"-->
+<!--            android:layout_width="170dp"-->
+<!--            android:layout_height="170dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:src="@drawable/slider1"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_title"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="6dp"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:text="Example news"-->
+<!--            android:textSize="16sp"-->
+<!--            android:lines="1"-->
+<!--            android:maxLines="1"-->
+<!--            android:ellipsize="marquee"/>-->
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:text="Example news"
+            android:textSize="12sp"
+            android:lines="5"
+            android:maxLines="5"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

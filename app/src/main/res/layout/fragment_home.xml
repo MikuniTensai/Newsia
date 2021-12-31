@@ -76,14 +76,14 @@
                 <TextView
                     android:textSize="16dp"
                     android:textStyle="bold"
-                    android:textColor="@color/ocean_4"
+                    android:textColor="@color/ocean_1"
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Produk Terbaru"/>
+                    android:text="Berita Terbaru"/>
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_produk"
+                    android:id="@+id/rv_newnews"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
@@ -99,14 +99,14 @@
                 <TextView
                     android:textSize="16dp"
                     android:textStyle="bold"
-                    android:textColor="@color/ocean_4"
+                    android:textColor="@color/ocean_1"
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Produk Terlaris"/>
+                    android:text="Berita Terlaris"/>
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_produkTerlasir"
+                    android:id="@+id/rv_bestnews"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
@@ -122,14 +122,14 @@
                 <TextView
                     android:textSize="16dp"
                     android:textStyle="bold"
-                    android:textColor="@color/ocean_4"
+                    android:textColor="@color/ocean_1"
                     android:layout_margin="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Elektronik"/>
+                    android:text="Berita"/>
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_elektronik"
+                    android:id="@+id/rv_news"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 

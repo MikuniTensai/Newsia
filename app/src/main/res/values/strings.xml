@@ -2,6 +2,7 @@
     <string name="app_name">Newsia</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_home">Home</string>
+    <string name="title_favorite">Favorite</string>
     <string name="title_account">Account</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Home</string>
