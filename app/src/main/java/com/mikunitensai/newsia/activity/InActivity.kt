@@ -28,7 +28,9 @@ class InActivity : AppCompatActivity() {
 
     private fun mainButton() {
         btnProsesLogin.setOnClickListener {
-            s.setStatusLogin(true)
+//            s.setStatusLogin(true)
+            startActivity(Intent(this, LoginActivity::class.java))
+
         }
 
         btnProsesRegister.setOnClickListener {

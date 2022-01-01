@@ -1,5 +1,6 @@
 package com.mikunitensai.newsia.app
 
+import com.mikunitensai.newsia.model.ResponModel
 import okhttp3.ResponseBody
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.POST
@@ -14,14 +15,14 @@ interface ApiService {
         @Field("email") email: String,
         @Field("phone") nomortlp: String,
         @Field("password") password: String,
-    ): Call<ResponseBody>
+    ): Call<ResponModel>
 
     @FormUrlEncoded
     @POST("login")
     fun login(
         @Field("email") email: String,
         @Field("password") password: String,
-    ): Call<ResponseBody>
+    ): Call<ResponModel>
 
 //    @POST("chekout")
 //    fun chekout(
