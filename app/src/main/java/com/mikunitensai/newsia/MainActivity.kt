@@ -1,6 +1,5 @@
 package com.mikunitensai.newsia
 
-import android.app.backup.SharedPreferencesBackupHelper
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,7 +9,7 @@ import android.view.MenuItem
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.mikunitensai.newsia.activity.LoginActivity
+import com.mikunitensai.newsia.activity.InActivity
 import com.mikunitensai.newsia.fragment.AccountFragment
 import com.mikunitensai.newsia.fragment.FavoriteFragment
 import com.mikunitensai.newsia.fragment.HomeFragment
@@ -66,7 +65,7 @@ class MainActivity : AppCompatActivity() {
                         Log.d("Response","Account")
                         callFragment(2, fragmentAccount)
                     } else {
-                        startActivity(Intent(this, LoginActivity::class.java))
+                        startActivity(Intent(this, InActivity::class.java))
                     }
                 }
             }
