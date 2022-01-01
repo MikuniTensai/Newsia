@@ -4,15 +4,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ProgressBar
-import android.widget.Toast
+import android.widget.*
 import com.mikunitensai.newsia.MainActivity
 import com.mikunitensai.newsia.R
 import com.mikunitensai.newsia.app.ApiConfig
 import com.mikunitensai.newsia.helper.SharedPreferences
 import com.mikunitensai.newsia.model.ResponModel
+import org.w3c.dom.Text
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -23,6 +21,7 @@ class LoginActivity : AppCompatActivity() {
     lateinit var edt_email: EditText
     lateinit var edt_password: EditText
     lateinit var pb: ProgressBar
+    lateinit var btn_lupaPassword: TextView
 
     lateinit var s:SharedPreferences
 
@@ -33,6 +32,8 @@ class LoginActivity : AppCompatActivity() {
         btn_login = findViewById(R.id.btn_login)
         edt_email = findViewById(R.id.edt_email)
         edt_password = findViewById(R.id.edt_password)
+        btn_lupaPassword = findViewById(R.id.btn_lupaPassword)
+
         pb = findViewById(R.id.pb)
 
         s = SharedPreferences(this)
@@ -40,6 +41,16 @@ class LoginActivity : AppCompatActivity() {
         btn_login.setOnClickListener {
             login()
         }
+
+        btn_lupaPassword.setOnClickListener {
+            dummy()
+        }
+    }
+
+    private fun dummy() {
+        edt_email.setText("mikunitensai@gmail.com")
+        edt_password.setText("mikunitensai123")
+        login()
     }
 
     private fun login() {
