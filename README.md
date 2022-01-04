@@ -27,17 +27,17 @@ Kotlin adalah sebuah bahasa pemrograman dengan pengetikan statis yang berjalan p
 Berikut adalah authentication untuk registrasi di API Newsia
 
 <p align=“center”>
-<a href="https://i.imgur.com/X0z3PMo.png"><img src="https://i.imgur.com/PqMB4Ou.png" alt=“Build Status”></a>
+<a href="https://i.imgur.com/X0z3PMo.png"><img src="https://i.imgur.com/X0z3PMo.png" alt=“Build Status”></a>
 </br>
 
 ## Berhasil Login 
 
 <p align=“center”>
-<a href="https://i.imgur.com/ZtgzAwM.png"><img src="https://i.imgur.com/PqMB4Ou.png" alt=“Build Status”></a>
+<a href="https://i.imgur.com/ZtgzAwM.png"><img src="https://i.imgur.com/ZtgzAwM.png" alt=“Build Status”></a>
 </br>
 
 <p align=“center”>
-<a href="https://i.imgur.com/j5eDJwA.png"><img src="https://i.imgur.com/PqMB4Ou.png" alt=“Build Status”></a>
+<a href="https://i.imgur.com/j5eDJwA.png"><img src="https://i.imgur.com/j5eDJwA.png" alt=“Build Status”></a>
 </br>
 ## Belum update readme pak.
 
