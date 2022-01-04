@@ -10,7 +10,6 @@ import com.mikunitensai.newsia.R
 import com.mikunitensai.newsia.app.ApiConfig
 import com.mikunitensai.newsia.helper.SharedPreferences
 import com.mikunitensai.newsia.model.ResponModel
-import org.w3c.dom.Text
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -23,7 +22,7 @@ class LoginActivity : AppCompatActivity() {
     lateinit var pb: ProgressBar
     lateinit var btn_lupaPassword: TextView
 
-    lateinit var s:SharedPreferences
+    lateinit var s: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -70,23 +69,25 @@ class LoginActivity : AppCompatActivity() {
             edt_password.text.toString()).enqueue(object : Callback<ResponModel> {
             override fun onResponse(call: Call<ResponModel>, response: Response<ResponModel>) {
                 val respon = response.body()!!
-                if (respon.Success == 1) {
-                    pb.visibility = View.VISIBLE
+                if (respon.success == 1) {
+                    pb.visibility = View.GONE
                     s.setStatusLogin(true)
+                    s.setString(s.nama, respon.user.name)
+                    s.setString(s.email, respon.user.email)
+                    s.setString(s.phone, respon.user.phone)
                     val intent = Intent(this@LoginActivity, MainActivity::class.java)
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
                     startActivity(intent)
-                    finish()
                     Toast.makeText(this@LoginActivity, "Login berhasil", Toast.LENGTH_SHORT).show()
                 } else {
-                    pb.visibility = View.VISIBLE
+                    pb.visibility = View.GONE
                     Toast.makeText(this@LoginActivity, "Login gagal", Toast.LENGTH_SHORT).show()
                 }
             }
 
             override fun onFailure(call: Call<ResponModel>, t: Throwable) {
                 Toast.makeText(this@LoginActivity, "Error: "+t.message, Toast.LENGTH_SHORT).show()
-                pb.visibility = View.VISIBLE
+                pb.visibility = View.GONE
             }
         })
     }

@@ -7,6 +7,9 @@ import android.content.SharedPreferences
 class SharedPreferences(activity: Activity) {
 
     val login = "login"
+    val nama = "nama"
+    val phone = "phone"
+    val email = "email"
 
     val mypref = "MAIN_PRF"
     val sp: SharedPreferences
@@ -22,5 +25,13 @@ class SharedPreferences(activity: Activity) {
     fun getStatusLogin():Boolean{
 
         return sp.getBoolean(login, false)
+    }
+
+    fun setString(key: String, vvalue: String){
+        sp.edit().putString(key, vvalue).apply()
+    }
+
+    fun getString(key: String): String{
+        return sp.getString(key, "")!!
     }
 }

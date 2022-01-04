@@ -84,22 +84,21 @@ class RegisterActivity : AppCompatActivity() {
             edt_nama.text.toString(), edt_email.text.toString(), edt_phone.text.toString(), edt_password.text.toString()).enqueue(object : Callback<ResponModel>{
             override fun onResponse(call: Call<ResponModel>, response: Response<ResponModel>) {
                 val respon = response.body()!!
-                if (respon.Success == 1) {
-                    pb.visibility = View.VISIBLE
-                    Toast.makeText(this@RegisterActivity, "Register berhasil" , Toast.LENGTH_SHORT).show()
+                if (respon.success === 1) {
+                    pb.visibility = View.GONE
                     s.setStatusLogin(true)
                     val intent = Intent(this@RegisterActivity, MainActivity::class.java)
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
                     startActivity(intent)
-                    finish()
+                    Toast.makeText(this@RegisterActivity, "Selamat datang " + respon.user.name, Toast.LENGTH_SHORT).show()
                 } else {
-                    pb.visibility = View.VISIBLE
+                    pb.visibility = View.GONE
                     Toast.makeText(this@RegisterActivity, "Register gagal", Toast.LENGTH_SHORT).show()
                 }
             }
 
             override fun onFailure(call: Call<ResponModel>, t: Throwable) {
-                pb.visibility = View.VISIBLE
+                pb.visibility = View.GONE
                 Toast.makeText(this@RegisterActivity, "Error: "+t.message, Toast.LENGTH_SHORT).show()
             }
         })
