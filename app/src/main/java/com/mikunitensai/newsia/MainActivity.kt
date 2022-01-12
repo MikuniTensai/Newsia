@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var menuItem: MenuItem
     private lateinit var bottomNavigationView: BottomNavigationView
 
-    private var statusLogin = false;
+    private var statusLogin = false
 
     private lateinit var s:SharedPreferences
 
@@ -41,9 +41,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setupBottomNav(){
-        fm.beginTransaction().add(R.id.container, fragmentHome).show(fragmentHome).commit();
-        fm.beginTransaction().add(R.id.container, fragmentFavorite).hide(fragmentFavorite).commit();
-        fm.beginTransaction().add(R.id.container, fragmentAccount).hide(fragmentAccount).commit();
+        fm.beginTransaction().add(R.id.container, fragmentHome).show(fragmentHome).commit()
+        fm.beginTransaction().add(R.id.container, fragmentFavorite).hide(fragmentFavorite).commit()
+        fm.beginTransaction().add(R.id.container, fragmentAccount).hide(fragmentAccount).commit()
 
         bottomNavigationView = findViewById(R.id.nav_view)
         menu = bottomNavigationView.menu

@@ -81,7 +81,7 @@ class LoginActivity : AppCompatActivity() {
                     Toast.makeText(this@LoginActivity, "Login berhasil", Toast.LENGTH_SHORT).show()
                 } else {
                     pb.visibility = View.GONE
-                    Toast.makeText(this@LoginActivity, "Login gagal", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@LoginActivity, "Error: "+respon.message, Toast.LENGTH_SHORT).show()
                 }
             }
 

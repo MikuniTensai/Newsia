@@ -84,7 +84,7 @@ class RegisterActivity : AppCompatActivity() {
             edt_nama.text.toString(), edt_email.text.toString(), edt_phone.text.toString(), edt_password.text.toString()).enqueue(object : Callback<ResponModel>{
             override fun onResponse(call: Call<ResponModel>, response: Response<ResponModel>) {
                 val respon = response.body()!!
-                if (respon.success === 1) {
+                if (respon.success == 1) {
                     pb.visibility = View.GONE
                     s.setStatusLogin(true)
                     val intent = Intent(this@RegisterActivity, MainActivity::class.java)

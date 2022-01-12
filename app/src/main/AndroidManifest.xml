@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.mikunitensai.newsia">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/config_network"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:theme="@style/Theme.Newsia"
         android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.Newsia">
+        tools:targetApi="28">
+        <activity
+            android:name=".activity.DetailActivity"
+            android:exported="false" />
         <activity
             android:name=".activity.RegisterActivity"
             android:exported="false" />

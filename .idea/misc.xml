@@ -3,25 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/drawable/bg_btn_favorit.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/drawable/bg_btn_google.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/drawable/bg_btn_login1.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/drawable/bg_btn_login2.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/drawable/bg_btn_login_1.xml" value="0.21875" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/drawable/bg_btn_login_2.xml" value="0.21875" />
+        <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/drawable/bg_bulet.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.21875" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/layout-v26/item_newnews.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/layout/activity_detail.xml" value="0.3625" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/layout/activity_in.xml" value="0.3625" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/layout/activity_main.xml" value="0.21422101449275363" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/layout/activity_main2.xml" value="0.3625" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/layout/activity_new.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/layout/activity_register.xml" value="0.3625" />
+        <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/layout/content_main.xml" value="0.203125" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/layout/fragment_account.xml" value="0.33" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/layout/fragment_favorite.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/layout/item_newnews.xml" value="0.3625" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/layout/item_slider.xml" value="0.3625" />
+        <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/layout/toolbar_custom.xml" value="0.3625" />
         <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3625" />
+        <entry key="..\:/Users/mikun/Documents/GitHub/Newsia/app/src/main/res/xml/config_network.xml" value="0.21875" />
       </map>
     </option>
   </component>
