@@ -36,10 +36,11 @@ Berikut adalah authentication untuk registrasi di API Newsia
 <a href="https://i.imgur.com/ZtgzAwM.png"><img src="https://i.imgur.com/ZtgzAwM.png" alt=“Build Status”></a>
 </br>
 
+## Tampilan awal aplikasi
+
 <p align=“center”>
-<a href="https://i.imgur.com/j5eDJwA.png"><img src="https://i.imgur.com/j5eDJwA.png" alt=“Build Status”></a>
+<a href="https://i.imgur.com/oSzRdHV.jpg"><img src="https://i.imgur.com/oSzRdHV.jpg" alt=“Build Status”></a>
 </br>
-## Belum update readme pak.
 
 ## License
 
